@@ -1,4 +1,4 @@
-input = open("inputs.txt", "r").read().split("\n")
+input = open("01/inputs.txt", "r").read().split("\n")
 
 sum = 0
 sum_list = []
