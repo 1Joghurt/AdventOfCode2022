@@ -8,7 +8,7 @@ for x in input:
         sum_list.append(sum)
         sum = 0
     else:
-        sum = sum + int(x)
+        sum += int(x)
 
 sum_list.sort(reverse=True);
 

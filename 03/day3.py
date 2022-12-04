@@ -11,7 +11,7 @@ def part1():
 
         for letter in first_comp:
             if letter in second_comp:
-                sum = sum + getValueForLetter(letter)
+                sum += getValueForLetter(letter)
                 break
     print(sum)
 
@@ -28,7 +28,7 @@ def part2():
 
         for letter in rucksack1:
             if letter in rucksack2 and letter in rucksack3:
-                    sum = sum + getValueForLetter(letter)
+                    sum += getValueForLetter(letter)
                     break
 
     print(sum)               
@@ -41,7 +41,7 @@ def getValueForLetter(letter):
         value = value - 96
     return value
 
-#part1()
+part1()
 part2()
 
 

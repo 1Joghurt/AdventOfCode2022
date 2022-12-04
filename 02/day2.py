@@ -26,7 +26,7 @@ point_shape_dic = {
 def part1():
     score = 0
     for x in input:
-        score = score + point__result_dic[result_dic[x]] + point_shape_dic[x.split(" ")[1]]
+        score += point__result_dic[result_dic[x]] + point_shape_dic[x.split(" ")[1]]
     
     print(score)
 
@@ -62,7 +62,7 @@ def part2():
         shape = shape_dic[x.split(" ")[0]][matchbook_dic[x.split(" ")[1]]]
 
         played = x.split(" ")[0] + " " + shape
-        score = score + point__result_dic[result_dic[played]] + point_shape_dic[shape]
+        score += point__result_dic[result_dic[played]] + point_shape_dic[shape]
     
     print(score)    
     
