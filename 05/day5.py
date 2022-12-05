@@ -59,5 +59,5 @@ def getStacks():
 
 
 
-#part1()
+part1()
 part2()
