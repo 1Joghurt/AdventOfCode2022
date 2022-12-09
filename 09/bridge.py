@@ -34,11 +34,11 @@ class Bridge:
     def __GetDirectionToMove(self, predecessor, current):       
         if predecessor == current:
             return (0,0)
-        elif predecessor[0] == current[0] and abs(predecessor[1] - current[1]) > 1:          # X Achse gleich, Y ungleich
+        elif predecessor[0] == current[0] and abs(predecessor[1] - current[1]) > 1:          # X axis same, Y not same
             return (0, 1 if predecessor[1] > current[1] else -1)
-        elif predecessor[1] == current[1] and abs(predecessor[0] - current[0]) > 1:          # X Achse ungleich, Y gleich
+        elif predecessor[1] == current[1] and abs(predecessor[0] - current[0]) > 1:          # X axis same, Y not same
             return (1 if predecessor[0] > current[0] else -1, 0)
-        elif abs(predecessor[0] - current[0]) > 1 or abs(predecessor[1] - current[1]) > 1:   # Beide ungleich
+        elif abs(predecessor[0] - current[0]) > 1 or abs(predecessor[1] - current[1]) > 1:   # Both not same
             if predecessor[0] > current[0] and predecessor[1] > current[1]:
                 return (1, 1)
             elif predecessor[0] < current[0] and predecessor[1] < current[1]:
@@ -48,28 +48,3 @@ class Bridge:
             elif predecessor[0] < current[0] and predecessor[1] > current[1]:
                 return (-1, 1)
         return (0,0)
-
-
-
-
-
-
-
-
-    #def Move(self, direction, count):
-    #    for _ in range(0, count):
-    #        old_head_position =  self.headPosition
-    #        if (direction == "U"):
-    #            self.headPosition = self.headPosition[0], self.headPosition[1] + 1
-    #        elif (direction == "D"):
-    #            self.headPosition = self.headPosition[0], self.headPosition[1] - 1
-    #        elif (direction == "R"):
-    #            self.headPosition = self.headPosition[0] + 1, self.headPosition[1],
-    #        elif (direction == "L"):
-    #            self.headPosition = self.headPosition[0] - 1, self.headPosition[1],
-    #
-    #        if abs(self.headPosition[0] - self.tailPosition[0]) > 1 or abs(self.headPosition[1] - self.tailPosition[1]) > 1:
-    #            self.tailPosition = old_head_position
-    #
-    #            if str(self.tailPosition) not in self.visitedByTail:
-    #                self.visitedByTail.append(str(self.tailPosition))
