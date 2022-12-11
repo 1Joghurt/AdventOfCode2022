@@ -1,7 +1,10 @@
 from instruction import Instruction
 
-input_instructions = open("05/inputs.txt", "r").read().split("\n")
-input_basestacks = open("05/basestacks.txt", "r").read().split("\n")
+with open("05/inputs.txt", "r") as f:
+    input_instructions = f.read().split("\n")
+
+with open("05/basestacks.txt", "r") as f:
+    input_basestacks = f.read().split("\n")
 
 
 def part1():

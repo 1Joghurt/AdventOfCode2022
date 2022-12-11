@@ -1,8 +1,7 @@
 from collections import deque
 
-
-input = open("08/inputs.txt", "r").read().split("\n")
-
+with open("08/inputs.txt", "r") as f:
+    inputs = f.read().split("\n")
 
 def part1():
     visible = {}

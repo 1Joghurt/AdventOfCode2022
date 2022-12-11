@@ -1,4 +1,5 @@
-input = open("02/inputs.txt", "r").read().split("\n")
+with open("02/inputs.txt", "r") as f:
+    input= f.read().split("\n")
 
 result_dic = {
     "A X":  0,

@@ -1,6 +1,7 @@
 from bridge import Bridge
 
-inputs = open("09/inputs.txt", "r").read().split("\n")
+with open("09/inputs.txt", "r") as f:
+    inputs = f.read().split("\n")
 
 bridge_2 = Bridge(2)
 bridge_9 = Bridge(10)

@@ -1,6 +1,7 @@
 from folderinfo import FolderInfo
 
-input = open("07/inputs.txt", "r").read().split("\n")
+with open("07/inputs.txt", "r") as f:
+    input = f.read().split("\n")
 
 
 def part1():

@@ -1,5 +1,6 @@
-input = open("01/inputs.txt", "r").read().split("\n")
-
+with open("01/inputs.txt", "r") as f:
+    
+    input= f.read().split("\n")
 sum = 0
 sum_list = []
 
@@ -10,7 +11,7 @@ for x in input:
     else:
         sum += int(x)
 
-sum_list.sort(reverse=True);
+sum_list.sort(reverse=True)
 
 print(sum_list[0]) #Part 1
 print(sum_list[0]+sum_list[1]+sum_list[2]) #Part 2

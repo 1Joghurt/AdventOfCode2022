@@ -1,5 +1,5 @@
-input = open("04/inputs.txt", "r").read().split("\n")
-
+with open("04/inputs.txt", "r") as f:
+    input = f.read().split("\n")
 
 def part1():
     sum = 0

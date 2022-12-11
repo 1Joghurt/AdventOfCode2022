@@ -1,4 +1,6 @@
-input = open("06/inputs.txt", "r").read()
+with open("06/inputs.txt", "r") as f:
+    input = f.read()
+
 
 def FirstDistinctChars(count):
    for i in range(0, len(input)-count):
